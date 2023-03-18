@@ -1,0 +1,84 @@
+.game{
+
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid #000;
+    margin: auto;
+
+}
+.mario{
+
+    width: 50px;
+    height: 50px;
+    background-image: url(img/mario.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 150px;
+    
+}
+
+.ninja{
+
+    width: 20px;
+    height: 20px;
+    background-image: url(img/ninja.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 130px;
+    left: 600px;
+    animation: MoveNinja 2s infinite linear;
+
+}
+
+@keyframes MoveNinja {
+    
+    0%{
+
+        left: 600px;
+
+    }
+    100%{
+
+        left: -15px;        
+
+    }
+
+}
+
+.jump{
+
+    animation: jump 0.5s linear;
+
+}
+
+@keyframes jump {
+    
+    0%{
+
+        top: 150px;
+
+    }
+    30%{
+
+        top: 130px;        
+
+    }
+    50%{
+
+        top: 80px; 
+
+    }
+    80%{
+
+        top: 130px; 
+
+    }
+    100%{
+
+        top: 150px;        
+
+    }
+
+}
